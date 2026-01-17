@@ -1,0 +1,15 @@
+input {
+    width: 250px;
+}
+
+form input {
+    width: 250px;
+}
+
+#matric {
+    border: 2px solid red;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}

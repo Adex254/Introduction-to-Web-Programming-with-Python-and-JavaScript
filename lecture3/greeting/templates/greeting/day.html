@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Day of the Week.</title>
+        <link rel="stylesheet" href="{% static 'greeting/style.css' %}">
+    </head>
+
+    <body>
+        <h1>Day of the Week.</h1>
+        {% if day == "monday" %}
+            <h1 id="mon">MONDAY!</h1>
+
+        {% elif day == "tuesday" %}
+            <h1 id="tue">TUESDAY!</h1>
+
+        {% elif day == "wednesday" %}
+            <h1 id="wed">WEDNESDAY!</h1>
+
+        {% elif day == "thursday" %} 
+            <h1 id="thur">THURSDAY!</h1>
+
+        {% elif day == "friday" %}
+            <h1 id="fri">FRIDAY!</h1>
+
+        {% else %}
+            <h1 id="sun">SATURDAY!</h1>
+
+        {% endif %}
+
+
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Greeting by time of the day.</title>
+        <link rel="stylesheet" href="{% static 'greeting/style.css' %}">
+    </head>
+
+
+    <body class="{{ theme }}">
+        
+        <p>The current hour is {{ hour }}</p>
+
+
+        {% if greeting == "morning" %}
+            <h1 id="mor">Good Morning!</h1>
+
+        {% elif greeting == "afternoon" %}
+            <h1 id="aft">Good Afternoon!</h1>
+
+        {% elif greeting == "evening" %}
+            <h1 id="eve">Good evening!</h1>
+
+        {% endif %}
+
+        
+
+ 
+    </body>
+</html>

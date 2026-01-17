@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    
+    <title>Student Hostel Allocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Hostel Allocation</h1>
+    <form>
+        <p>Fill in the form approiprately.</p>
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="full_name" required> 
+        </div>
+
+        <div>
+            <label for="matric">Matric Number:</label> 
+            <input type="text" id="matric" name="matric_number" required>
+        </div>
+
+            <div>
+            <label for="level">Level:</label>
+            <input list="levels" id="level" name="level" required>
+            <datalist id="levels">
+                <option value="100 Level">
+                <option value="200 Level">
+                <option value="300 Level">
+                <option value="400 Level">
+                <option value="500 Level">
+            </datalist>
+            </div>
+         
+         <fieldset>
+            <legend>Gender</legend>
+
+            <label>
+                <input type="radio" name="gender" value="Male" required>Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">Female
+            </label>
+         </fieldset>
+
+         <div>
+            <label for="hostel">Hostel Preference:</label> 
+            <input list="hostel" name="hostel"  id="hostel"  required>
+                <datalist id="hostel">
+                    <option value="Fajuyi Hall">
+                    <option value="Mozambique Hall">   
+                    <option value="Awolowo Hall"> 
+                    <option value="Angola Hall">                    
+                </datalist>
+        </div>
+         <div>
+            <input type="submit">
+         </div>
+         
+    </form>
+</body>
+
+</html>

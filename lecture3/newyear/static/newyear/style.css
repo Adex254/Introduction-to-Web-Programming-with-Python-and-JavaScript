@@ -1,0 +1,17 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 90px;
+    text-align: center;
+    padding: 250px;
+    text
+}
+
+.yes {
+    color: white;
+    background-color: green;
+}
+
+.no {
+    color: white;
+    background-color: brown;
+}

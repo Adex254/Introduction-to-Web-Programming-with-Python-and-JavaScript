@@ -1,0 +1,65 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 70px;
+    background-color: white;
+    padding: 100px;
+    margin: 80px;
+    animation: fadeIn 1.5s ease-in-out;
+ }
+
+
+ #mor {
+    color: blue;  
+ }
+
+#aft {
+    color: brown;
+ }
+
+#eve {
+    color: purple;
+ }
+
+p {
+    font-size: 30px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.morning-bg {
+    background-color: lightblue;
+}
+
+.afternoon-bg {
+    background-color: #fff3e0;
+}
+
+.evening-bg {
+    background-color: purple;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+
+#mon {
+    color: yellowgreen;
+    font-style: italic;
+}
