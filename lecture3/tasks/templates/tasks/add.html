@@ -5,11 +5,15 @@
     <h1>Add Tasks</h1>
 
 
-    <form>
-        <input type="text" placeholder="Select tasks" name="tasks">
+    <form action="{% url 'tasks:add' %}"  method="post">
+
+        {% csrf_token %}
+
+        <input type="text" placeholder="New Tasks" name="task">
         <input type="submit">
     </form>
-
+    
+    <a href="{% url 'tasks:index' %}">View Tasks</a>
 {% endblock %}
             
    

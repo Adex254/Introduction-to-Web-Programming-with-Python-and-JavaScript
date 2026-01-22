@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+ 
 
-
-tasks = ["sing", "write", "code"]
+tasks = []
 # Create your views here.
+
+
 
 def index(request):
     return render(request, "tasks/index.html", {
@@ -10,4 +12,14 @@ def index(request):
     })
 
 def add(request):
+    if request.method == "POST":
+
+        task = request.POST.get("task")
+
+        if task:
+            tasks.append(task)
+
+            return redirect("tasks:index")
+
+
     return render(request, "tasks/add.html")
